@@ -29,11 +29,11 @@ public class Circus {
         int total = 0;
         for (Asset a : assets) {
             if (a.getValue() <= 5) {
-                System.out.println("Ignoring low value asset: " + a.getValue());
+                System.out.println("Ignoring low value item: " + a.getValue());
                 continue;
             }
             total += a.getValue();
-            System.out.println("Adding asset value: " + a.getValue());
+            System.out.println("Adding item value: " + a.getValue());
         }
         return total;
     }
